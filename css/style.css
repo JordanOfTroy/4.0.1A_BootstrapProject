@@ -1,0 +1,24 @@
+body {
+  background-color: teal;
+}
+
+.showMe {
+  background-image: url("/images/BaW_plants.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.showMe .overlay {
+  background: rgb(57, 151, 240);
+  background: linear-gradient(41deg, rgba(57, 151, 240, 0.438834909) 0%, rgba(230, 93, 223, 0.2903755252) 56%, rgba(71, 7, 186, 0.3127844888) 100%);
+  height: 100%;
+}
+.showMe .darkoverlay {
+  height: 100%;
+  background: rgb(29, 77, 122);
+  background: linear-gradient(41deg, rgba(29, 77, 122, 0.4) 0%, rgba(112, 47, 109, 0.4) 56%, rgba(41, 2, 111, 0.4) 100%);
+}
+.showMe .nooverlay {
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */
