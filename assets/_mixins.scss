@@ -1,0 +1,9 @@
+@use './vars' as *;
+@use './keyframes' as *;
+
+@mixin backgroundSpin ($time, $count:infinite, $timing:linear) {
+    animation-name: spin;
+    animation-duration: $time;
+    animation-iteration-count: $count;
+    animation-timing-function: $timing; 
+}
