@@ -50,8 +50,15 @@
     color: $white-color;
     font-family: $fontFam-1;
     font-size: 2em;
-    border-radius: 50px;
+    border-radius: $round-me;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
     // position: relative;
     // box-shadow: $dark-color 0px 60px 40px -7px;
+}
+
+@mixin spacerBar {
+    border: solid $white-color 2px;
+    height: 100%;
+    width: 0%;
+    border-radius: $round-me;
 }
