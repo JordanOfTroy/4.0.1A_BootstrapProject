@@ -68,9 +68,13 @@ p, i {
 }
 
 .prodCard {
-    // background-color: rgba($color: $light-color, $alpha: .2);
+    background-color: rgba($color: $light-color, $alpha: .2);
+    box-shadow: $butt-shadow;
+    border-radius: $round-me;
+    transition: .2s;
     &:hover {
         cursor: pointer;
+        border-radius: $rv-round-me;
     }
 }
 

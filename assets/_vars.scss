@@ -27,7 +27,7 @@ $overlay-grad-three: linear-gradient(90deg, $alpha-two 0%, $alpha-three 50%, $al
 // SHADOWS
 $box-shadow-1: inset 0px 0px 300px 60px rgba(0,0,0,0.88);
 $box-shadow-2: inset 0px 0px 400px 80px $black-color;
-$butt-shadow: $dark-color 0px 15px 25px -10px;
+$butt-shadow: $black-color 0px 15px 25px -10px;
 
 
 
@@ -43,7 +43,8 @@ $chonk: 700;
 $norm: normal;
 $thin: 200;
 
-$round-me: 100px;
+$round-me: 100px 5px;
+$rv-round-me: 5px 100px;
 
 // FONTS
 $fontFam-1: 'Jungle';
