@@ -23,22 +23,35 @@
 }
 
 @mixin hOne {
-    font-family: 'Junge';
+    font-family: $fontFam-1;
     font-style: normal;
     font-weight: $norm;
     font-size: $h-one-size;
 }
 
 @mixin hTwo {
-    font-family: 'Laila';
+    font-family: $fontFam-2;
     font-style: normal;
     font-weight: $chonk;
     font-size: $h-two-size;
 }
 
 @mixin hThree {
-    font-family: 'Laila';
+    font-family: $fontFam-2;
     font-style: normal;
     font-weight: $thin;
     font-size: $h-three-size;
+}
+
+@mixin mainButt {
+    background-color: $bright-color;
+    border: solid 2px $bright-color;
+    border: none;
+    color: $white-color;
+    font-family: $fontFam-1;
+    font-size: 2em;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    // position: relative;
+    // box-shadow: $dark-color 0px 60px 40px -7px;
 }

@@ -1,5 +1,5 @@
 // COLORS
-$see-through-ness: .7;
+$see-through-ness: .6;
 $alpha-one: rgba(29,77,122,$see-through-ness);
 $alpha-two: rgba(112,47,109,$see-through-ness);
 $alpha-three: rgba(41,2,111,$see-through-ness);
@@ -8,6 +8,7 @@ $alpha-three: rgba(41,2,111,$see-through-ness);
 // $solid-three: #29026f;
 
 $dark-color: #2c1c36;
+$bright-color: #754990;
 $mid-color: #776786;
 $light-color: #a897b2;
 
@@ -16,11 +17,16 @@ $black-color: #0d0810;
 $white-color: #eae8eb;
 
 //GRADIENTS
-$overlay-grad: linear-gradient(47deg, $alpha-one 0%, $alpha-two 50%, $alpha-three 100%);
+// $overlay-grad: linear-gradient(47deg, $alpha-one 25%, $alpha-two 50%, $alpha-three 75%);
+$overlay-grad: linear-gradient(47deg, $alpha-two 0%, $alpha-one 25%, $alpha-three 75%, $alpha-two 100%);
 
 $overlay-grad-one: linear-gradient(90deg, $alpha-one 0%, $alpha-two 50%, $alpha-three 100%);
 $overlay-grad-two: linear-gradient(90deg, $alpha-three 0%, $alpha-one 50%, $alpha-two 100%);
 $overlay-grad-three: linear-gradient(90deg, $alpha-two 0%, $alpha-three 50%, $alpha-one 100%);
+
+// SHADOWS
+$box-shadow-1: inset 0px 0px 300px 60px rgba(0,0,0,0.88);
+$box-shadow-2: inset 0px 0px 400px 80px $black-color;
 
 
 
@@ -28,11 +34,14 @@ $overlay-grad-three: linear-gradient(90deg, $alpha-two 0%, $alpha-three 50%, $al
 $overlay-spin-time: 10s;
 
 // SIZING
-$h-one-size: 5em;
-$h-two-size: 2.2em;
+$h-one-size: 4em;
+$h-two-size: 2em;
 $h-three-size: 2em;
 
 $chonk: 700;
 $norm: normal;
 $thin: 200;
 
+// FONTS
+$fontFam-1: 'Jungle';
+$fontFam-2: 'Laila';

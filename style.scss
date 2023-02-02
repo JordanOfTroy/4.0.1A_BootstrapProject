@@ -1,9 +1,22 @@
 @use './assets/vars' as * ;
 @use './assets/mixins' as *;
 
+.BB {
+    border: solid 2px blue;
+}
+
+.BR {
+    border: solid 2px red;
+}
+
+
 body {
     // background-color: teal;
     overflow: hidden;
+}
+
+p, i {
+    color: $white-color;
 }
 
 .showMe {
@@ -27,6 +40,7 @@ body {
     height: 100%;
     width: 100%;
     background: $overlay-grad;
+    box-shadow: $box-shadow-2;
 }
 
 .titleText {
@@ -44,3 +58,16 @@ body {
         @include hThree;
     }
 }
+
+.mainButt {
+    @include mainButt;
+    &:hover {
+        border: solid 2px $dark-color;
+    }
+    
+}
+
+.prodCard {
+    background-color: rgba($color: $light-color, $alpha: .2);
+}
+

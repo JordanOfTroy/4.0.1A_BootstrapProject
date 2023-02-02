@@ -16,62 +16,74 @@
 }
 @-webkit-keyframes shift-solid {
   from {
-    background-color: rgba(29, 77, 122, 0.7);
+    background-color: rgba(29, 77, 122, 0.6);
   }
   33% {
-    background-color: rgba(112, 47, 109, 0.7);
+    background-color: rgba(112, 47, 109, 0.6);
   }
   66% {
-    background-color: rgba(41, 2, 111, 0.7);
+    background-color: rgba(41, 2, 111, 0.6);
   }
   to {
-    background-color: rgba(29, 77, 122, 0.7);
+    background-color: rgba(29, 77, 122, 0.6);
   }
 }
 @keyframes shift-solid {
   from {
-    background-color: rgba(29, 77, 122, 0.7);
+    background-color: rgba(29, 77, 122, 0.6);
   }
   33% {
-    background-color: rgba(112, 47, 109, 0.7);
+    background-color: rgba(112, 47, 109, 0.6);
   }
   66% {
-    background-color: rgba(41, 2, 111, 0.7);
+    background-color: rgba(41, 2, 111, 0.6);
   }
   to {
-    background-color: rgba(29, 77, 122, 0.7);
+    background-color: rgba(29, 77, 122, 0.6);
   }
 }
 @-webkit-keyframes shift-gradient {
   from {
-    background: linear-gradient(90deg, rgba(29, 77, 122, 0.7) 0%, rgba(112, 47, 109, 0.7) 50%, rgba(41, 2, 111, 0.7) 100%);
+    background: linear-gradient(90deg, rgba(29, 77, 122, 0.6) 0%, rgba(112, 47, 109, 0.6) 50%, rgba(41, 2, 111, 0.6) 100%);
   }
   33% {
-    background: linear-gradient(90deg, rgba(41, 2, 111, 0.7) 0%, rgba(29, 77, 122, 0.7) 50%, rgba(112, 47, 109, 0.7) 100%);
+    background: linear-gradient(90deg, rgba(41, 2, 111, 0.6) 0%, rgba(29, 77, 122, 0.6) 50%, rgba(112, 47, 109, 0.6) 100%);
   }
   66% {
-    background: linear-gradient(90deg, rgba(112, 47, 109, 0.7) 0%, rgba(41, 2, 111, 0.7) 50%, rgba(29, 77, 122, 0.7) 100%);
+    background: linear-gradient(90deg, rgba(112, 47, 109, 0.6) 0%, rgba(41, 2, 111, 0.6) 50%, rgba(29, 77, 122, 0.6) 100%);
   }
   to {
-    background: linear-gradient(90deg, rgba(29, 77, 122, 0.7) 0%, rgba(112, 47, 109, 0.7) 50%, rgba(41, 2, 111, 0.7) 100%);
+    background: linear-gradient(90deg, rgba(29, 77, 122, 0.6) 0%, rgba(112, 47, 109, 0.6) 50%, rgba(41, 2, 111, 0.6) 100%);
   }
 }
 @keyframes shift-gradient {
   from {
-    background: linear-gradient(90deg, rgba(29, 77, 122, 0.7) 0%, rgba(112, 47, 109, 0.7) 50%, rgba(41, 2, 111, 0.7) 100%);
+    background: linear-gradient(90deg, rgba(29, 77, 122, 0.6) 0%, rgba(112, 47, 109, 0.6) 50%, rgba(41, 2, 111, 0.6) 100%);
   }
   33% {
-    background: linear-gradient(90deg, rgba(41, 2, 111, 0.7) 0%, rgba(29, 77, 122, 0.7) 50%, rgba(112, 47, 109, 0.7) 100%);
+    background: linear-gradient(90deg, rgba(41, 2, 111, 0.6) 0%, rgba(29, 77, 122, 0.6) 50%, rgba(112, 47, 109, 0.6) 100%);
   }
   66% {
-    background: linear-gradient(90deg, rgba(112, 47, 109, 0.7) 0%, rgba(41, 2, 111, 0.7) 50%, rgba(29, 77, 122, 0.7) 100%);
+    background: linear-gradient(90deg, rgba(112, 47, 109, 0.6) 0%, rgba(41, 2, 111, 0.6) 50%, rgba(29, 77, 122, 0.6) 100%);
   }
   to {
-    background: linear-gradient(90deg, rgba(29, 77, 122, 0.7) 0%, rgba(112, 47, 109, 0.7) 50%, rgba(41, 2, 111, 0.7) 100%);
+    background: linear-gradient(90deg, rgba(29, 77, 122, 0.6) 0%, rgba(112, 47, 109, 0.6) 50%, rgba(41, 2, 111, 0.6) 100%);
   }
 }
+.BB {
+  border: solid 2px blue;
+}
+
+.BR {
+  border: solid 2px red;
+}
+
 body {
   overflow: hidden;
+}
+
+p, i {
+  color: #eae8eb;
 }
 
 .showMe {
@@ -95,7 +107,8 @@ body {
   margin: 0 auto;
   height: 100%;
   width: 100%;
-  background: linear-gradient(47deg, rgba(29, 77, 122, 0.7) 0%, rgba(112, 47, 109, 0.7) 50%, rgba(41, 2, 111, 0.7) 100%);
+  background: linear-gradient(47deg, rgba(112, 47, 109, 0.6) 0%, rgba(29, 77, 122, 0.6) 25%, rgba(41, 2, 111, 0.6) 75%, rgba(112, 47, 109, 0.6) 100%);
+  box-shadow: inset 0px 0px 400px 80px #0d0810;
 }
 
 .titleText {
@@ -105,20 +118,38 @@ body {
   text-align: center;
 }
 .titleText h1 {
-  font-family: "Junge";
+  font-family: "Jungle";
   font-style: normal;
   font-weight: normal;
-  font-size: 5em;
+  font-size: 4em;
 }
 .titleText h2 {
   font-family: "Laila";
   font-style: normal;
   font-weight: 700;
-  font-size: 2.2em;
+  font-size: 2em;
 }
 .titleText h3 {
   font-family: "Laila";
   font-style: normal;
   font-weight: 200;
   font-size: 2em;
+}
+
+.mainButt {
+  background-color: #754990;
+  border: solid 2px #754990;
+  border: none;
+  color: #eae8eb;
+  font-family: "Jungle";
+  font-size: 2em;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+.mainButt:hover {
+  border: solid 2px #2c1c36;
+}
+
+.prodCard {
+  background-color: rgba(168, 151, 178, 0.2);
 }/*# sourceMappingURL=style.css.map */
