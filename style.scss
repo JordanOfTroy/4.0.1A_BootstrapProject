@@ -11,30 +11,36 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100vh; // Can probably be removed later
+    width: 100vw;
     overflow: hidden;
-    position: absolute;
-    z-index: 1000;
-    
+    position: sticky;
+    top: 0px;
+    left: 0px;
 }
 
 .darkoverlay {
     position: absolute;
-    z-index: 1050;
-    top: -50%;
-    left: -50%;
-    height: 200vw;
-    width: 200vw;
-    border-radius: 100%;
+    top: 0px;
+    left: 0px;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
     background: $overlay-grad;
-    @include backgroundSpin($overlay-spin);
-    overflow: hidden;
 }
 
-// .makemetop {
-//     position: absolute;
-//     z-index: 2000;
-//     height: 300px;
-//     width: 500px;
-//     background-color: rgba(255, 255, 255, 0.062);
-// }
+.titleText {
+    color: $white-color;
+    & > * {
+        text-align: center;
+    }
+    h1 {
+        @include hOne;
+    }
+    h2 {
+        @include hTwo;
+    }
+    h3 {
+        @include hThree;
+    }
+}

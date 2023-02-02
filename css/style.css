@@ -14,6 +14,62 @@
     transform: rotate(360deg);
   }
 }
+@-webkit-keyframes shift-solid {
+  from {
+    background-color: rgba(29, 77, 122, 0.7);
+  }
+  33% {
+    background-color: rgba(112, 47, 109, 0.7);
+  }
+  66% {
+    background-color: rgba(41, 2, 111, 0.7);
+  }
+  to {
+    background-color: rgba(29, 77, 122, 0.7);
+  }
+}
+@keyframes shift-solid {
+  from {
+    background-color: rgba(29, 77, 122, 0.7);
+  }
+  33% {
+    background-color: rgba(112, 47, 109, 0.7);
+  }
+  66% {
+    background-color: rgba(41, 2, 111, 0.7);
+  }
+  to {
+    background-color: rgba(29, 77, 122, 0.7);
+  }
+}
+@-webkit-keyframes shift-gradient {
+  from {
+    background: linear-gradient(90deg, rgba(29, 77, 122, 0.7) 0%, rgba(112, 47, 109, 0.7) 50%, rgba(41, 2, 111, 0.7) 100%);
+  }
+  33% {
+    background: linear-gradient(90deg, rgba(41, 2, 111, 0.7) 0%, rgba(29, 77, 122, 0.7) 50%, rgba(112, 47, 109, 0.7) 100%);
+  }
+  66% {
+    background: linear-gradient(90deg, rgba(112, 47, 109, 0.7) 0%, rgba(41, 2, 111, 0.7) 50%, rgba(29, 77, 122, 0.7) 100%);
+  }
+  to {
+    background: linear-gradient(90deg, rgba(29, 77, 122, 0.7) 0%, rgba(112, 47, 109, 0.7) 50%, rgba(41, 2, 111, 0.7) 100%);
+  }
+}
+@keyframes shift-gradient {
+  from {
+    background: linear-gradient(90deg, rgba(29, 77, 122, 0.7) 0%, rgba(112, 47, 109, 0.7) 50%, rgba(41, 2, 111, 0.7) 100%);
+  }
+  33% {
+    background: linear-gradient(90deg, rgba(41, 2, 111, 0.7) 0%, rgba(29, 77, 122, 0.7) 50%, rgba(112, 47, 109, 0.7) 100%);
+  }
+  66% {
+    background: linear-gradient(90deg, rgba(112, 47, 109, 0.7) 0%, rgba(41, 2, 111, 0.7) 50%, rgba(29, 77, 122, 0.7) 100%);
+  }
+  to {
+    background: linear-gradient(90deg, rgba(29, 77, 122, 0.7) 0%, rgba(112, 47, 109, 0.7) 50%, rgba(41, 2, 111, 0.7) 100%);
+  }
+}
 body {
   overflow: hidden;
 }
@@ -24,27 +80,45 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  width: 100vw;
   overflow: hidden;
-  position: absolute;
-  z-index: 1000;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  left: 0px;
 }
 
 .darkoverlay {
   position: absolute;
-  z-index: 1050;
-  top: -50%;
-  left: -50%;
-  height: 200vw;
-  width: 200vw;
-  border-radius: 100%;
-  background: linear-gradient(90deg, rgba(29, 77, 122, 0.4) 0%, rgba(112, 47, 109, 0.4) 50%, rgba(41, 2, 111, 0.4) 100%);
-  -webkit-animation-name: spin;
-          animation-name: spin;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(47deg, rgba(29, 77, 122, 0.7) 0%, rgba(112, 47, 109, 0.7) 50%, rgba(41, 2, 111, 0.7) 100%);
+}
+
+.titleText {
+  color: #eae8eb;
+}
+.titleText > * {
+  text-align: center;
+}
+.titleText h1 {
+  font-family: "Junge";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 5em;
+}
+.titleText h2 {
+  font-family: "Laila";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2em;
+}
+.titleText h3 {
+  font-family: "Laila";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 2em;
 }/*# sourceMappingURL=style.css.map */

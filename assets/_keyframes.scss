@@ -1,3 +1,5 @@
+@use './vars' as * ;
+
 @keyframes spin {
     from {
         transform:rotate(0deg);
@@ -5,5 +7,41 @@
     
     to {
         transform:rotate(360deg);
+    }
+}
+
+@keyframes shift-solid {
+    from {
+        background-color: $alpha-one;
+    }
+
+    33% {
+        background-color: $alpha-two;
+    }
+
+    66% {
+        background-color: $alpha-three;
+    }
+
+    to {
+        background-color: $alpha-one;
+    }
+}
+
+@keyframes shift-gradient {
+    from {
+        background: $overlay-grad-one;
+    }
+
+    33% {
+        background: $overlay-grad-two;
+    }
+
+    66% {
+        background: $overlay-grad-three;
+    }
+
+    to {
+        background: $overlay-grad-one;
     }
 }

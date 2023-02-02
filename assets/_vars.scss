@@ -1,7 +1,38 @@
 // COLORS
-$overlay-grad: linear-gradient(90deg, rgba(29,77,122,0.4) 0%, rgba(112,47,109,0.4) 50%, rgba(41,2,111,0.4) 100%);
+$see-through-ness: .7;
+$alpha-one: rgba(29,77,122,$see-through-ness);
+$alpha-two: rgba(112,47,109,$see-through-ness);
+$alpha-three: rgba(41,2,111,$see-through-ness);
+// $solid-one: #1d4d7ad9;
+// $solid-two: #702f6dd9;
+// $solid-three: #29026f;
+
+$dark-color: #2c1c36;
+$mid-color: #776786;
+$light-color: #a897b2;
+
+$grey-color: #77788c;
+$black-color: #0d0810;
+$white-color: #eae8eb;
+
+//GRADIENTS
+$overlay-grad: linear-gradient(47deg, $alpha-one 0%, $alpha-two 50%, $alpha-three 100%);
+
+$overlay-grad-one: linear-gradient(90deg, $alpha-one 0%, $alpha-two 50%, $alpha-three 100%);
+$overlay-grad-two: linear-gradient(90deg, $alpha-three 0%, $alpha-one 50%, $alpha-two 100%);
+$overlay-grad-three: linear-gradient(90deg, $alpha-two 0%, $alpha-three 50%, $alpha-one 100%);
+
+
 
 // TIMING
-$overlay-spin: 10s;
+$overlay-spin-time: 10s;
 
 // SIZING
+$h-one-size: 5em;
+$h-two-size: 2.2em;
+$h-three-size: 2em;
+
+$chonk: 700;
+$norm: normal;
+$thin: 200;
+
