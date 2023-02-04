@@ -70,6 +70,22 @@
     background: linear-gradient(90deg, rgba(29, 77, 122, 0.6) 0%, rgba(112, 47, 109, 0.6) 50%, rgba(41, 2, 111, 0.6) 100%);
   }
 }
+@-webkit-keyframes flippy {
+  from {
+    border-radius: 100px 5px;
+  }
+  to {
+    border-radius: 5px 100px;
+  }
+}
+@keyframes flippy {
+  from {
+    border-radius: 100px 5px;
+  }
+  to {
+    border-radius: 5px 100px;
+  }
+}
 .BB {
   border: solid 2px blue;
 }
@@ -78,20 +94,20 @@
   border: solid 2px red;
 }
 
+body {
+  background-image: url("../images/BaW_plants_mid_crop.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 p, i {
   color: #eae8eb;
 }
 
 .showMe {
-  background-image: url("../images/BaW_plants_mid_crop.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
-  overflow: hidden;
-  position: -webkit-sticky;
-  position: sticky;
   top: 0px;
   left: 0px;
 }
@@ -142,9 +158,6 @@ p, i {
   border-radius: 100px 5px;
   box-shadow: #0d0810 0px 15px 25px -10px;
 }
-.mainButt:hover {
-  border: solid 2px #2c1c36;
-}
 
 .prodCard {
   background-color: rgba(168, 151, 178, 0.2);
@@ -168,12 +181,18 @@ p, i {
   background-color: rgba(234, 232, 235, 0.5);
 }
 
+.butt, .navButt {
+  border-radius: 100px 5px;
+  transition: 0.2s;
+}
+.butt:hover, .navButt:hover {
+  border-radius: 5px 100px;
+  cursor: pointer;
+}
+
 .navButt {
   border-radius: 100px 5px;
   box-shadow: #0d0810 0px 15px 25px -10px;
-}
-.navButt:hover {
-  cursor: pointer;
 }
 .navButt a {
   text-decoration: none;

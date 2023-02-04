@@ -13,6 +13,10 @@
 body {
     // background-color: teal;
     // overflow: hidden;
+    background-image: url('../images/BaW_plants_mid_crop.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 p, i {
@@ -20,14 +24,10 @@ p, i {
 }
 
 .showMe {
-    background-image: url('../images/BaW_plants_mid_crop.jpeg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh; // Can probably be removed later
+    height: 100%; // Can probably be removed later
     width: 100vw;
-    overflow: hidden;
-    position: sticky;
+    // overflow: hidden;
+    // position: sticky;
     top: 0px;
     left: 0px;
 }
@@ -61,10 +61,6 @@ p, i {
 
 .mainButt {
     @include mainButt;
-    &:hover {
-        border: solid 2px $dark-color;
-    }
-    
 }
 
 .prodCard {
@@ -86,13 +82,20 @@ p, i {
     background-color: rgba($color: $white-color, $alpha: .5);
 }
 
-.navButt {
-    @extend .navRow;
+.butt {
     border-radius: $round-me;
-    box-shadow: $butt-shadow;
+    transition: .2s;
     &:hover {
+        border-radius: $rv-round-me;
         cursor: pointer;
     }
+}
+
+.navButt {
+    @extend .navRow;
+    @extend .butt;
+    border-radius: $round-me;
+    box-shadow: $butt-shadow;
     a {
         text-decoration: none;
         color: $dark-color;

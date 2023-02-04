@@ -45,3 +45,13 @@
         background: $overlay-grad-one;
     }
 }
+
+@keyframes flippy {
+    from {
+        border-radius: $round-me;
+    }
+
+    to {
+        border-radius: $rv-round-me;
+    }
+}
